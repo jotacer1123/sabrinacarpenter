@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chica-Ebooks - Loja de E-books</title>
+    <link rel="stylesheet" href="chica-styles-updated.css">
+</head>
+<body>
+    <!-- Header/Navigation -->
+    <header class="header">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                   <img src="chicabooks_logo.png" alt="Chica-Ebooks" width="50" height="50">
+                </div>
+                <nav class="nav">
+                    <a href="#home" class="nav-link">Home</a>
+                    <a href="#shop" class="nav-link">Loja</a>
+                    <a href="#about" class="nav-link">Sobre</a>
+                    <a href="#contact" class="nav-link">Contato</a>
+                </nav>
+                <div class="nav-icons">
+                    <button class="icon-btn" aria-label="Perfil">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                            <circle cx="12" cy="7" r="4"/>
+                        </svg>
+                    </button>
+                    <button class="mobile-menu-btn" aria-label="Menu">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <line x1="3" y1="12" x2="21" y2="12"></line>
+                            <line x1="3" y1="6" x2="21" y2="6"></line>
+                            <line x1="3" y1="18" x2="21" y2="18"></line>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-image">
+                    <div class="book-stack"></div>
+                    <div class="main-book"></div>
+                    <div class="floating-book"></div>
+                    <div class="reading-light"></div>
+                </div>
+                <div class="hero-text">
+                    <p class="hero-label">NOVO PROJETO!</p>
+                    <h1 class="hero-title">Acesse os livros<br>de nossa escola!</h1>
+                    <p class="hero-description">Devs: Mateus, João Carlos, Samuel Ferreira, João Marcelo</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Top 3 Best Books Section -->
+    <section class="browse-range">
+        <div class="container">
+            <h2 class="section-title">Top 3 Melhores Livros</h2>
+            <p class="section-subtitle">Os livros mais vendidos e mais amados pelos nossos leitores</p>
+            
+            <div class="range-grid">
+                <div class="range-card">
+                    <div class="range-image book1-img"></div>
+                    <h3 class="range-title">O Poder do Hábito</h3>
+                    <p class="book-author">Charles Duhigg</p>
+                    <div class="book-rating">⭐⭐⭐⭐⭐ (4.8)</div>
+                </div>
+                <div class="range-card">
+                    <div class="range-image book2-img"></div>
+                    <h3 class="range-title">Mindset</h3>
+                    <p class="book-author">Carol S. Dweck</p>
+                    <div class="book-rating">⭐⭐⭐⭐⭐ (4.9)</div>
+                </div>
+                <div class="range-card">
+                    <div class="range-image book3-img"></div>
+                    <h3 class="range-title">Atomic Habits</h3>
+                    <p class="book-author">James Clear</p>
+                    <div class="book-rating">⭐⭐⭐⭐⭐ (5.0)</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Carousel Section - Uma linha horizontal -->
+    <section class="ebooks-carousel-section">
+        <div class="container">
+            <div class="carousel-header">
+                <h2 class="section-title">📚 Nossa Coleção de E-books</h2>
+                <p class="section-subtitle">Navegue pela nossa biblioteca digital com os melhores títulos</p>
+            </div>
+
+            <div class="bookshelf-carousel">
+                <div class="carousel-viewport">
+                    <div class="carousel-track" id="carouselTrack">
+                        <!-- Todos os livros em uma única linha -->
+                        <div class="ebook-card">
+                            <div class="ebook-badge badge-discount">-30%</div>
+                            <div class="ebook-cover cover-arte-guerra">
+                                <div class="ebook-icon">⚔️</div>
+                            </div>
+                            <div class="ebook-info">
+                                <h3 class="ebook-title">A Arte da Guerra</h3>
+                                <p class="ebook-author">Sun Tzu</p>
+                                <p class="ebook-genre">Estratégia</p>
+                                <div class="ebook-rating">⭐⭐⭐⭐⭐</div>
+                                <button class="btn-add-cart">Adicionar</button>
+                            </div>
+                        </div>
+
+                        <div class="ebook-card">
+                            <div class="ebook-cover cover-1984">
+                                <div class="ebook-icon">👁️</div>
+                            </div>
+                            <div class="ebook-info">
+                                <h3 class="ebook-title">1984</h3>
+                                <p class="ebook-author">George Orwell</p>
+                                <p class="ebook-genre">Distopia</p>
+                                <div class="ebook-rating">⭐⭐⭐⭐⭐</div>
+                                <button class="btn-add-cart">Adicionar</button>
+                            </div>
+                        </div>
+
+                        <div class="ebook-card">
+                            <div class="ebook-badge badge-discount">-50%</div>
+                            <div class="ebook-cover cover-sapiens">
+                                <div class="ebook-icon">🧬</div>
+                            </div>
+                            <div class="ebook-info">
+                                <h3 class="ebook-title">Sapiens</h3>
+                                <p class="ebook-author">Yuval Noah Harari</p>
+                                <p class="ebook-genre">História</p>
+                                <div class="ebook-rating">⭐⭐⭐⭐⭐</div>
+                                <button class="btn-add-cart">Adicionar</button>
+                            </div>
+                        </div>
+
+                        <div class="ebook-card">
+                            <div class="ebook-badge badge-new">Novo</div>
+                            <div class="ebook-cover cover-poder-agora">
+                                <div class="ebook-icon">🧘</div>
+                            </div>
+                            <div class="ebook-info">
+                                <h3 class="ebook-title">O Poder do Agora</h3>
+                                <p class="ebook-author">Eckhart Tolle</p>
+                                <p class="ebook-genre">Autoajuda</p>
+                                <div class="ebook-rating">⭐⭐⭐⭐⭐</div>
+                                <button class="btn-add-cart">Adicionar</button>
+                            </div>
+                        </div>
+
+                        <div class="ebook-card">
+                            <div class="ebook-cover cover-dom-casmurro">
+                                <div class="ebook-icon">💔</div>
+                            </div>
+                            <div class="ebook-info">
+                                <h3 class="ebook-title">Dom Casmurro</h3>
+                                <p class="ebook-author">Machado de Assis</p>
+                                <p class="ebook-genre">Realismo</p>
+                                <div class="ebook-rating">⭐⭐⭐⭐⭐</div>
+                                <button class="btn-add-cart">Adicionar</button>
+                            </div>
+                        </div>
+
+                        <div class="ebook-card">
+                            <div class="ebook-badge badge-new">Novo</div>
+                            <div class="ebook-cover cover-hora-estrela">
+                                <div class="ebook-icon">✨</div>
+                            </div>
+                            <div class="ebook-info">
+                                <h3 class="ebook-title">A Hora da Estrela</h3>
+                                <p class="ebook-author">Clarice Lispector</p>
+                                <p class="ebook-genre">Literatura</p>
+                                <div class="ebook-rating">⭐⭐⭐⭐⭐</div>
+                                <button class="btn-add-cart">Adicionar</button>
+                            </div>
+                        </div>
+
+                        <div class="ebook-card">
+                            <div class="ebook-cover cover-vidas-secas">
+                                <div class="ebook-icon">🌵</div>
+                            </div>
+                            <div class="ebook-info">
+                                <h3 class="ebook-title">Vidas Secas</h3>
+                                <p class="ebook-author">Graciliano Ramos</p>
+                                <p class="ebook-genre">Regionalismo</p>
+                                <div class="ebook-rating">⭐⭐⭐⭐⭐</div>
+                                <button class="btn-add-cart">Adicionar</button>
+                            </div>
+                        </div>
+
+                        <div class="ebook-card">
+                            <div class="ebook-badge badge-discount">-25%</div>
+                            <div class="ebook-cover cover-grande-sertao">
+                                <div class="ebook-icon">🌾</div>
+                            </div>
+                            <div class="ebook-info">
+                                <h3 class="ebook-title">Grande Sertão</h3>
+                                <p class="ebook-author">Guimarães Rosa</p>
+                                <p class="ebook-genre">Romance</p>
+                                <div class="ebook-rating">⭐⭐⭐⭐⭐</div>
+                                <button class="btn-add-cart">Adicionar</button>
+                            </div>
+                        </div>
+
+                        <div class="ebook-card">
+                            <div class="ebook-cover cover-senhor-aneis">
+                                <div class="ebook-icon">💍</div>
+                            </div>
+                            <div class="ebook-info">
+                                <h3 class="ebook-title">O Senhor dos Anéis</h3>
+                                <p class="ebook-author">J.R.R. Tolkien</p>
+                                <p class="ebook-genre">Fantasia</p>
+                                <div class="ebook-rating">⭐⭐⭐⭐⭐</div>
+                                <button class="btn-add-cart">Adicionar</button>
+                            </div>
+                        </div>
+
+                        <div class="ebook-card">
+                            <div class="ebook-badge badge-new">Novo</div>
+                            <div class="ebook-cover cover-metamorfose">
+                                <div class="ebook-icon">🪲</div>
+                            </div>
+                            <div class="ebook-info">
+                                <h3 class="ebook-title">A Metamorfose</h3>
+                                <p class="ebook-author">Franz Kafka</p>
+                                <p class="ebook-genre">Existencialismo</p>
+                                <div class="ebook-rating">⭐⭐⭐⭐⭐</div>
+                                <button class="btn-add-cart">Adicionar</button>
+                            </div>
+                        </div>
+
+                        <div class="ebook-card">
+                            <div class="ebook-cover cover-pequeno-principe">
+                                <div class="ebook-icon">👑</div>
+                            </div>
+                            <div class="ebook-info">
+                                <h3 class="ebook-title">O Pequeno Príncipe</h3>
+                                <p class="ebook-author">Antoine de Saint-Exupéry</p>
+                                <p class="ebook-genre">Infantil</p>
+                                <div class="ebook-rating">⭐⭐⭐⭐⭐</div>
+                                <button class="btn-add-cart">Adicionar</button>
+                            </div>
+                        </div>
+
+                        <div class="ebook-card">
+                            <div class="ebook-badge badge-discount">-40%</div>
+                            <div class="ebook-cover cover-cem-anos">
+                                <div class="ebook-icon">🦋</div>
+                            </div>
+                            <div class="ebook-info">
+                                <h3 class="ebook-title">Cem Anos de Solidão</h3>
+                                <p class="ebook-author">García Márquez</p>
+                                <p class="ebook-genre">Realismo Mágico</p>
+                                <div class="ebook-rating">⭐⭐⭐⭐⭐</div>
+                                <button class="btn-add-cart">Adicionar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Navigation Buttons -->
+                <button class="carousel-nav carousel-nav-left" id="prevBtn" aria-label="Livros anteriores">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6 1.41-1.41z"/>
+                    </svg>
+                </button>
+                
+                <button class="carousel-nav carousel-nav-right" id="nextBtn" aria-label="Próximos livros">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/>
+                    </svg>
+                </button>
+
+                <!-- Carousel Footer -->
+                <div class="carousel-footer">
+                    <div class="scroll-hint">← Arraste ou use as setas →</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="chica-carousel-updated.js"></script>
+</body>
+</html>
